@@ -1,0 +1,52 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+#uva {
+    grid-area: uva;
+}
+
+#morango {
+    grid-area: morango;
+}
+
+#melancia {
+    grid-area: melancia;
+}
+
+#limao {
+    grid-area: limao;
+}
+
+#mamao {
+    grid-area: mamao;
+}
+
+#abacaxi {
+    grid-area: abacaxi;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+body {
+    margin: 2%;
+    margin-right: 10%;
+    display: grid;
+    min-height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 15vw 25vw 25vw;
+    grid-gap: 2vw;
+    grid-template-areas: 
+            'uva morango melancia melancia'
+            'limao limao melancia melancia'
+            'mamao mamao abacaxi abacaxi';
+}
+
+div {
+    display: block;
+}
